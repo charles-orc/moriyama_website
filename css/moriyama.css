@@ -1,4 +1,258 @@
-.intro-texts, body .section-exhibition .outer-container .content-container .flex-row .text-panel .intro-text, body .interview-moriyama .outer-container .content-container .intro-text {
+/* Define variables */
+/* Initial settings */
+figure {
+  margin: 0; }
+
+body {
+  background-color: #222;
+  padding: 0;
+  margin: 0 auto;
+  /* section landing */
+  /* section exhibition */
+  /* section sneak peek */
+  /* section interview */
+  /* section plan visit */
+  /* section sponsorship */ }
+  body .section-landing {
+    height: 870px; }
+    body .section-landing .outer-container {
+      width: 1280px;
+      height: inherit;
+      margin: 0 auto;
+      display: flex; }
+      body .section-landing .outer-container .left-container, body .section-landing .outer-container .right-container {
+        width: 160px; }
+      body .section-landing .outer-container .content-container {
+        width: 960px;
+        margin: 0 10px 0; }
+    body .section-landing .outer-container {
+      background-color: #131313;
+      background-image: url("../Assets/Images/md-landing-bg.jpg");
+      background-repeat: no-repeat;
+      background-position: bottom right; }
+      body .section-landing .outer-container .content-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; }
+        body .section-landing .outer-container .content-container .top-images {
+          margin-top: 40px;
+          display: flex;
+          justify-content: space-between; }
+          body .section-landing .outer-container .content-container .top-images .main-title {
+            width: 574px;
+            height: 134px; }
+          body .section-landing .outer-container .content-container .top-images .hamburger-image {
+            margin-top: 20px; }
+            body .section-landing .outer-container .content-container .top-images .hamburger-image .menu-hamburger {
+              width: 25px;
+              padding: 2px;
+              cursor: pointer; }
+        body .section-landing .outer-container .content-container .bottom-panel {
+          display: flex;
+          align-items: flex-end;
+          justify-content: space-between;
+          margin-bottom: 60px; }
+          body .section-landing .outer-container .content-container .bottom-panel .artist {
+            margin-left: 0; }
+            body .section-landing .outer-container .content-container .bottom-panel .artist h1 {
+              line-height: 40px; }
+            body .section-landing .outer-container .content-container .bottom-panel .artist p {
+              letter-spacing: 2px; }
+          body .section-landing .outer-container .content-container .bottom-panel .white-gallery-image {
+            margin-bottom: 15px; }
+      body .section-landing .outer-container .menu-panel {
+        position: absolute;
+        top: 0;
+        background: rgba(0, 0, 0, 0.8);
+        max-width: 1280px;
+        width: 1280px;
+        height: 870px;
+        z-index: 5000;
+        display: none; }
+        body .section-landing .outer-container .menu-panel .menu-close-icon {
+          display: flex;
+          justify-content: flex-end; }
+          body .section-landing .outer-container .menu-panel .menu-close-icon .menu-close {
+            margin: 62px 146px 0 0;
+            padding: 2px;
+            cursor: pointer; }
+        body .section-landing .outer-container .menu-panel .menu-list {
+          display: flex;
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin-top: 100px; }
+          body .section-landing .outer-container .menu-panel .menu-list .moriyama-logo {
+            width: 150px;
+            margin-bottom: 3%; }
+          body .section-landing .outer-container .menu-panel .menu-list a {
+            text-decoration: none;
+            height: 60px;
+            margin-bottom: 20px; }
+            body .section-landing .outer-container .menu-panel .menu-list a h1 {
+              border-bottom: 1px solid #fff;
+              padding-bottom: 12px;
+              width: 650px;
+              text-align: center; }
+  body .section-exhibition .outer-container {
+    width: 1280px;
+    height: inherit;
+    margin: 0 auto;
+    display: flex; }
+    body .section-exhibition .outer-container .left-container, body .section-exhibition .outer-container .right-container {
+      width: 160px; }
+    body .section-exhibition .outer-container .content-container {
+      width: 960px;
+      margin: 75px 10px 70px; }
+  body .section-exhibition .outer-container {
+    background-color: #000; }
+    body .section-exhibition .outer-container .left-container {
+      display: flex;
+      align-items: flex-end; }
+      body .section-exhibition .outer-container .left-container .img-about-misawa {
+        max-width: 500px;
+        max-height: 500px; }
+    body .section-exhibition .outer-container .content-container .text-panel {
+      margin-left: 5px; }
+    body .section-exhibition .outer-container .right-container {
+      display: flex;
+      align-items: flex-end;
+      justify-content: flex-end; }
+  body .section-sneak-peek .outer-container {
+    width: 1280px;
+    height: inherit;
+    margin: 0 auto;
+    display: flex; }
+    body .section-sneak-peek .outer-container .left-container, body .section-sneak-peek .outer-container .right-container {
+      width: 160px; }
+    body .section-sneak-peek .outer-container .content-container {
+      width: 960px;
+      margin: 75px 10px 70px; }
+  body .section-sneak-peek .outer-container {
+    background-color: #dcddde; }
+    body .section-sneak-peek .outer-container .content-container h1, body .section-sneak-peek .outer-container .content-container p, body .section-sneak-peek .outer-container .content-container li {
+      color: #131313; }
+    body .section-sneak-peek .outer-container .content-container .inner-left-panel {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 987px; }
+      body .section-sneak-peek .outer-container .content-container .inner-left-panel .sneak-peek-intro {
+        width: 220px; }
+      body .section-sneak-peek .outer-container .content-container .inner-left-panel .shinjuku-image {
+        flex: 0 0 61%; }
+    body .section-sneak-peek .outer-container .content-container .inner-right-panel {
+      margin-left: 5px; }
+      body .section-sneak-peek .outer-container .content-container .inner-right-panel .sneak-peek-right-images {
+        margin-top: 5px; }
+        body .section-sneak-peek .outer-container .content-container .inner-right-panel .sneak-peek-right-images .img-panel-bottom-right {
+          display: flex;
+          margin-top: 20px; }
+          body .section-sneak-peek .outer-container .content-container .inner-right-panel .sneak-peek-right-images .img-panel-bottom-right .img-untitled {
+            max-width: 400px;
+            max-height: 300px;
+            margin-left: 20px; }
+  body .section-interview .outer-container {
+    width: 1280px;
+    height: inherit;
+    margin: 0 auto;
+    display: flex; }
+    body .section-interview .outer-container .left-container, body .section-interview .outer-container .right-container {
+      width: 160px; }
+    body .section-interview .outer-container .content-container {
+      width: 960px;
+      margin: 75px 10px 70px; }
+  body .section-interview .outer-container {
+    background-color: #000; }
+    body .section-interview .outer-container .interview-top-panel {
+      margin-bottom: 30px; }
+    body .section-interview .outer-container .pull-quote {
+      width: 300px;
+      margin: 5px 0 50px;
+      padding: 20px 15px;
+      outline: #666 3px solid;
+      text-align: center; }
+      body .section-interview .outer-container .pull-quote .quote {
+        font-family: 'Droid Serif', serif;
+        font-size: 18px;
+        font-weight: 400;
+        font-style: italic;
+        line-height: 170%;
+        margin: 0 0 10px 0;
+        padding: 0;
+        color: #fff; }
+      body .section-interview .outer-container .pull-quote .quote-name {
+        font-family: 'Nunito', sans-serif;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 180%;
+        color: #fff;
+        margin: 0;
+        padding: 0; }
+    body .section-interview .outer-container .img-moriyama {
+      width: 470px;
+      max-width: 470px;
+      margin-left: -168px; }
+  body .section-plan-visit .outer-container {
+    width: 1280px;
+    height: inherit;
+    margin: 0 auto;
+    display: flex; }
+    body .section-plan-visit .outer-container .left-container, body .section-plan-visit .outer-container .right-container {
+      width: 160px; }
+    body .section-plan-visit .outer-container .content-container {
+      width: 960px;
+      margin: 75px 10px 70px; }
+  body .section-plan-visit .outer-container {
+    background-color: #131313;
+    background-image: url("../Assets/Images/md-plan-trip-gallery.jpg");
+    background-repeat: no-repeat;
+    background-position: top right; }
+    body .section-plan-visit .outer-container .left-container {
+      display: flex;
+      align-items: flex-end; }
+      body .section-plan-visit .outer-container .left-container .img-visit-map {
+        max-width: 570px; }
+    body .section-plan-visit .outer-container .content-container .address-panel {
+      width: 220px; }
+      body .section-plan-visit .outer-container .content-container .address-panel .openhour-table tbody {
+        border: none;
+        font-family: 'Droid Serif', serif;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 180%;
+        color: #fff; }
+        body .section-plan-visit .outer-container .content-container .address-panel .openhour-table tbody .openhour-row:nth-child(even), body .section-plan-visit .outer-container .content-container .address-panel .openhour-table tbody .openhour-row:nth-child(odd) {
+          border: none;
+          background-color: #131313;
+          color: #fff; }
+        body .section-plan-visit .outer-container .content-container .address-panel .openhour-table tbody .openhour-row td {
+          padding-top: 0;
+          padding-left: 0;
+          padding-bottom: 0; }
+    body .section-plan-visit .outer-container .content-container .text-panel {
+      background-color: #131313;
+      margin-top: -35px;
+      padding-top: 35px; }
+  body .section-sponsorship .outer-container {
+    width: 1280px;
+    height: inherit;
+    margin: 0 auto;
+    display: flex; }
+    body .section-sponsorship .outer-container .left-container, body .section-sponsorship .outer-container .right-container {
+      width: 160px; }
+    body .section-sponsorship .outer-container .content-container {
+      width: 960px;
+      margin: 75px 10px 70px; }
+  body .section-sponsorship .outer-container {
+    background-color: #000; }
+    body .section-sponsorship .outer-container .sponsors-panel {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+
+/* TYPOGRAPHY */
+.intro-texts {
   font-family: 'Droid Serif', serif;
   font-size: 20px;
   font-weight: 400;
@@ -7,363 +261,66 @@
   margin: 0 0 15px 0;
   padding: 0; }
 
-body {
-  background-color: #fff;
-  padding: 0;
-  margin: 0 auto;
-  /* SECTION */
-  /* TYPOGRAPHY */ }
-  body .landing {
-    height: 868px;
-    background-color: #131313;
-    display: flex;
-    flex-direction: column; }
-    body .landing .outer-container {
-      width: 1280px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column; }
-      body .landing .outer-container .dog {
-        align-self: flex-end;
-        margin-top: 117px; }
-      body .landing .outer-container .content-container {
-        width: 960px;
-        align-self: center;
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        margin-left: 2%; }
-        body .landing .outer-container .content-container .top-panel {
-          width: 100%;
-          display: flex;
-          justify-content: space-between; }
-          body .landing .outer-container .content-container .top-panel .main-title {
-            width: 574px;
-            height: 134px;
-            margin-top: 42px; }
-          body .landing .outer-container .content-container .top-panel .menu-hamburger {
-            width: 25px;
-            padding: 2px;
-            cursor: pointer;
-            align-self: flex-start;
-            margin-top: 60px; }
-        body .landing .outer-container .content-container .bottom-panel {
-          width: 100%;
-          display: flex;
-          justify-content: space-between; }
-          body .landing .outer-container .content-container .bottom-panel .artist {
-            margin-top: 500px; }
-            body .landing .outer-container .content-container .bottom-panel .artist h1 {
-              line-height: 40px; }
-            body .landing .outer-container .content-container .bottom-panel .artist p {
-              letter-spacing: 2px;
-              margin-bottom: 0; }
-          body .landing .outer-container .content-container .bottom-panel .white-gallery {
-            align-self: flex-end; }
-      body .landing .outer-container .menu-panel {
-        position: absolute;
-        top: 0;
-        background: rgba(0, 0, 0, 0.8);
-        width: 100%;
-        height: 868px;
-        z-index: 5000;
-        display: none; }
-        body .landing .outer-container .menu-panel .menu-close {
-          position: relative;
-          margin-top: 4%;
-          margin-left: 78%;
-          padding: 2px;
-          cursor: pointer; }
-        body .landing .outer-container .menu-panel .menu-list {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          margin-top: 7%; }
-          body .landing .outer-container .menu-panel .menu-list .moriyama-logo {
-            width: 150px;
-            margin-bottom: 3%; }
-          body .landing .outer-container .menu-panel .menu-list a {
-            text-decoration: none;
-            height: 60px;
-            margin-bottom: 20px; }
-            body .landing .outer-container .menu-panel .menu-list a h1 {
-              border-bottom: 1px solid #fff;
-              padding-bottom: 12px;
-              width: 650px;
-              text-align: center; }
-  body .section-exhibition {
-    background-color: #000;
-    width: 100%;
-    padding: 80px 10px 0;
-    margin: 0; }
-    body .section-exhibition .outer-container {
-      width: 1280px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column;
-      flex-direction: row;
-      align-items: flex-end;
-      justify-content: flex-end; }
-      body .section-exhibition .outer-container .content-container {
-        width: 960px;
-        align-self: center;
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        justify-content: space-between; }
-        body .section-exhibition .outer-container .content-container .flex-row .img-panel-left {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-end; }
-          body .section-exhibition .outer-container .content-container .flex-row .img-panel-left .img-top {
-            margin-top: 8px; }
-          body .section-exhibition .outer-container .content-container .flex-row .img-panel-left .img-bottom {
-            max-width: 470px;
-            width: 470px;
-            margin-top: 198%; }
-        body .section-exhibition .outer-container .content-container .flex-row .text-panel {
-          padding-bottom: 80px; }
-  body .sneak-peek {
-    padding: 95px 0;
-    background-color: #dcddde;
-    color: #555; }
-    body .sneak-peek .outer-container {
-      width: 1280px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column; }
-      body .sneak-peek .outer-container .content-container {
-        width: 960px;
-        align-self: center;
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        justify-content: space-between; }
-        body .sneak-peek .outer-container .content-container .right-padding {
-          padding-right: 5px; }
-        body .sneak-peek .outer-container .content-container .sneak-peek-intro {
-          margin: -20px 0 53px; }
-          body .sneak-peek .outer-container .content-container .sneak-peek-intro h1 {
-            color: #131313;
-            margin-bottom: 10px; }
-          body .sneak-peek .outer-container .content-container .sneak-peek-intro p {
-            color: #131313;
-            margin-bottom: 110px; }
-        body .sneak-peek .outer-container .content-container .img-panel-bottom-right {
-          display: flex;
-          align-items: flex-start; }
-        body .sneak-peek .outer-container .content-container .img-top-right {
-          margin-bottom: 20px; }
-        body .sneak-peek .outer-container .content-container .img-bottom-right {
-          margin-left: 20px; }
-        body .sneak-peek .outer-container .content-container .credits {
-          margin-top: 450px;
-          color: #131313; }
-  body .interview-moriyama {
-    background-color: #000;
-    padding: 80px 10px 65px;
-    margin: 0; }
-    body .interview-moriyama .outer-container {
-      width: 1280px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column; }
-      body .interview-moriyama .outer-container .content-container {
-        width: 960px;
-        align-self: center;
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        justify-content: space-between; }
-        body .interview-moriyama .outer-container .content-container .interview-top-panel h2 {
-          font-size: 22px;
-          margin-bottom: 32px; }
-        body .interview-moriyama .outer-container .content-container .interview-top-panel iframe {
-          margin-bottom: 8px; }
-        body .interview-moriyama .outer-container .content-container .intro-text {
-          margin-top: 23px; }
-        body .interview-moriyama .outer-container .content-container .interview-left-panel {
-          display: flex;
-          flex-direction: column;
-          align-items: flex-end; }
-          body .interview-moriyama .outer-container .content-container .interview-left-panel .pull-quote {
-            margin: 35px 0 50px;
-            padding: 20px 15px;
-            outline: #666 3px solid;
-            text-align: center; }
-            body .interview-moriyama .outer-container .content-container .interview-left-panel .pull-quote .quote {
-              font-family: 'Droid Serif', serif;
-              font-size: 18px;
-              font-weight: 400;
-              font-style: italic;
-              line-height: 170%;
-              margin: 0 0 10px 0;
-              padding: 0;
-              color: #fff; }
-            body .interview-moriyama .outer-container .content-container .interview-left-panel .pull-quote .quote-name {
-              font-family: 'Nunito', sans-serif;
-              font-size: 16px;
-              font-weight: 400;
-              line-height: 180%;
-              color: #fff;
-              margin: 0;
-              padding: 0; }
-          body .interview-moriyama .outer-container .content-container .interview-left-panel .img-moriyama {
-            width: 470px;
-            max-width: 470px;
-            margin-bottom: 20px; }
-          body .interview-moriyama .outer-container .content-container .interview-left-panel .credits {
-            margin-top: 0; }
-  body .visit-plan {
-    background-color: #131313; }
-    body .visit-plan .outer-container {
-      width: 1280px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column; }
-      body .visit-plan .outer-container .content-container {
-        width: 960px;
-        align-self: center;
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        justify-content: space-between;
-        padding: 70px 0; }
-        body .visit-plan .outer-container .content-container .plan-visit-h1 {
-          margin: 12px 0 0 0; }
-        body .visit-plan .outer-container .content-container .visit-left-panel {
-          padding-top: 25px;
-          display: flex;
-          flex-direction: column;
-          align-items: flex-end; }
-          body .visit-plan .outer-container .content-container .visit-left-panel .openhour-table tbody {
-            border: none;
-            font-family: 'Droid Serif', serif;
-            font-size: 15px;
-            font-weight: 400;
-            line-height: 180%;
-            color: #fff; }
-            body .visit-plan .outer-container .content-container .visit-left-panel .openhour-table tbody .openhour-row:nth-child(even), body .visit-plan .outer-container .content-container .visit-left-panel .openhour-table tbody .openhour-row:nth-child(odd) {
-              border: none;
-              background-color: #131313;
-              color: #fff; }
-            body .visit-plan .outer-container .content-container .visit-left-panel .openhour-table tbody .openhour-row td {
-              padding-top: 0;
-              padding-left: 0;
-              padding-bottom: 0; }
-          body .visit-plan .outer-container .content-container .visit-left-panel .img-visit-map {
-            max-width: 470px;
-            width: 470px; }
-        body .visit-plan .outer-container .content-container .visit-right-panel .img-plan-visit {
-          position: relative;
-          margin-top: -70px;
-          margin-left: 0; }
-        body .visit-plan .outer-container .content-container .visit-right-panel .text-panel {
-          background-color: #131313;
-          position: relative;
-          margin-top: 0;
-          margin-left: 0;
-          padding-top: 25px;
-          z-index: 10; }
-          body .visit-plan .outer-container .content-container .visit-right-panel .text-panel p {
-            margin-bottom: 15px; }
-          body .visit-plan .outer-container .content-container .visit-right-panel .text-panel .last {
-            margin-bottom: 22px; }
-      body .visit-plan .outer-container .img-plan-visit {
-        width: 785px;
-        max-width: 785px;
-        align-self: flex-end;
-        margin-bottom: -43.5%; }
-  body .sponsorship {
-    background-color: #000;
-    padding: 50px 0; }
-    body .sponsorship .outer-container {
-      width: 1280px;
-      margin: 0 auto;
-      display: flex;
-      flex-direction: column; }
-      body .sponsorship .outer-container .content-container {
-        width: 960px;
-        align-self: center;
-        position: relative;
-        display: flex;
-        flex-direction: row;
-        align-items: flex-start;
-        flex-wrap: wrap;
-        justify-content: space-between; }
-        body .sponsorship .outer-container .content-container .sponsor-panel {
-          display: flex; }
-          body .sponsorship .outer-container .content-container .sponsor-panel .sponsor-panel-left {
-            width: 66%; }
-          body .sponsorship .outer-container .content-container .sponsor-panel .sponsor-panel-right {
-            width: 100%; }
-            body .sponsorship .outer-container .content-container .sponsor-panel .sponsor-panel-right .more-sponsor-panel {
-              display: flex;
-              align-items: flex-start;
-              justify-content: space-between; }
-              body .sponsorship .outer-container .content-container .sponsor-panel .sponsor-panel-right .more-sponsor-panel img {
-                margin-right: 57px; }
-  body h1 {
-    font-family: 'Nunito', sans-serif;
-    font-size: 42px;
-    font-weight: 300;
-    color: #fff;
-    margin: 0 0 18px 0;
-    padding: 0; }
-  body h2 {
-    font-family: 'Nunito', sans-serif;
-    font-size: 20px;
-    font-weight: 300;
-    color: #fff;
-    margin: -15px 0 18px 0;
-    padding: 0; }
-  body h3 {
-    font-family: 'Nunito', sans-serif;
-    font-size: 20px;
-    color: #fff;
-    margin: 0 0 15px 0;
-    padding: 0; }
-  body p {
-    font-family: 'Droid Serif', serif;
-    font-size: 15px;
-    font-weight: 400;
-    line-height: 180%;
-    color: #fff;
-    margin: 0 0 15px 0;
-    padding: 0; }
-    body p .last {
-      margin: 0 0 30px 0; }
-  body ul.credits {
-    font-family: 'Nunito', sans-serif;
-    font-size: 12px;
-    font-style: italic;
-    font-weight: 300;
-    line-height: 180%;
-    list-style-type: none;
-    color: #fff;
-    margin: 10px 0 0;
-    padding: 0; }
-  body a {
-    font-style: italic;
-    text-decoration: underline;
-    color: #fff; }
-    body a:hover {
-      color: #bbb; }
-  body .no-left-padding {
-    padding-left: 0; }
-  body .no-right-padding {
-    padding-right: 0; }
+h1 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 42px;
+  font-weight: 300;
+  color: #fff;
+  margin: 0 0 18px 0;
+  padding: 0; }
+
+h2 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  color: #fff;
+  margin: -15px 0 18px 0;
+  padding: 0; }
+
+h3 {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  color: #fff;
+  margin: 0 0 15px 0;
+  padding: 0; }
+
+p {
+  font-family: 'Droid Serif', serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 180%;
+  color: #fff;
+  margin: 0 0 15px 0;
+  padding: 0; }
+  p .last {
+    margin: 0 0 30px 0; }
+
+ul.credits, .fig-credits {
+  font-family: 'Nunito', sans-serif;
+  font-size: 12px;
+  font-style: italic;
+  font-weight: 300;
+  line-height: 180%;
+  list-style-type: none;
+  color: #fff;
+  margin: 10px 0 0;
+  padding: 0; }
+
+a {
+  font-style: italic;
+  text-decoration: underline;
+  color: #fff; }
+  a:hover {
+    color: #bbb; }
+
+.no-left-padding {
+  padding-left: 0; }
+
+.no-right-padding {
+  padding-right: 0; }
+
+.no-side-padding {
+  padding-left: 0;
+  padding-right: 0; }
 
 /*# sourceMappingURL=moriyama.css.map */

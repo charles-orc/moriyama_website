@@ -4,8 +4,5 @@
 *.zip
 *.7z
 *.dmg
-Assets/
-vendor/
-*.scss
 *.map
 *.sass-cache
