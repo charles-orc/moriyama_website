@@ -347,6 +347,124 @@ body {
     }
 }
 
+/* mobile at 640px */
+@media only screen and (max-width: 640px) {
+    body {
+        /* section landing */
+        .section-landing {
+            .outer-container {
+                background-image: none;
+
+                .mobile-no-side-margin {
+                    margin-left: 0;
+                    margin-right: 0;
+                    margin-top: 15px;
+                }
+
+                .mobile-landing-right-panel {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-end;
+                    text-align: right;
+
+                    .menu-hamburger {
+                        width: 25px;
+                        padding: 2px;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+
+        /* section plan visit */
+        .section-plan-visit {
+            .outer-container {
+                background-image: none;
+
+                .mobile-address-panel {
+
+                    .img-mobile-plan-bg {
+                        z-index: -1;
+                    }
+
+                    .address-panel {
+                        background-color: $background-darkgray;
+                        margin-top: -170px;
+                        position: relative;
+                    }
+                }
+
+                .text-panel {
+                    background-color: transparent !important;
+
+                    .img-visit-map {
+                        margin-bottom: 25px;
+                    }
+
+                    .mobile-text {
+                        padding-left: 0;
+                        padding-right: 0;
+                    }
+                }
+            }
+        }
+
+        /* Other sections */
+        .outer-container {
+            width: 320px !important;
+
+            .left-container, .right-container {
+                display: none !important;
+            }
+
+            .content-container {
+                width: 320px !important;
+                margin-left: 15px !important;
+                margin-right: 20px !important;
+
+                /* section exhibition */
+                .about-image {
+                    margin:0 0 25px;
+                }
+
+                .mobile-exhibision-moriyama {
+                    float: right;
+                    margin: 0 0 0 20px;
+                    max-width: 95px;
+                }
+
+                /* section sneak peek */
+                .mobile-sneak-peek-images {
+                    img {
+                        margin-bottom: 15px;
+                    }
+                }
+
+                /* section interview */
+                .pull-quote {
+                    max-width: 290px;
+                    padding: 10px 20px;
+                }
+
+                /* section sponsorship */
+                .mobile-sponsors-sub {
+                    padding-left: 0;
+
+                    .mobile-sponsors-heading {
+                        margin-top: 35px;
+                    }
+
+                    .mobile-sponsors-panel {
+                        img {
+                            margin-bottom: 25px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
 /* TYPOGRAPHY */
 
 .intro-texts {

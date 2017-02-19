@@ -251,6 +251,71 @@ body {
       justify-content: space-between;
       align-items: center; }
 
+/* mobile at 640px */
+@media only screen and (max-width: 640px) {
+  body {
+    /* section landing */
+    /* section plan visit */
+    /* Other sections */ }
+    body .section-landing .outer-container {
+      background-image: none; }
+      body .section-landing .outer-container .mobile-no-side-margin {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 15px; }
+      body .section-landing .outer-container .mobile-landing-right-panel {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right; }
+        body .section-landing .outer-container .mobile-landing-right-panel .menu-hamburger {
+          width: 25px;
+          padding: 2px;
+          cursor: pointer; }
+    body .section-plan-visit .outer-container {
+      background-image: none; }
+      body .section-plan-visit .outer-container .mobile-address-panel .img-mobile-plan-bg {
+        z-index: -1; }
+      body .section-plan-visit .outer-container .mobile-address-panel .address-panel {
+        background-color: #131313;
+        margin-top: -170px;
+        position: relative; }
+      body .section-plan-visit .outer-container .text-panel {
+        background-color: transparent !important; }
+        body .section-plan-visit .outer-container .text-panel .img-visit-map {
+          margin-bottom: 25px; }
+        body .section-plan-visit .outer-container .text-panel .mobile-text {
+          padding-left: 0;
+          padding-right: 0; }
+    body .outer-container {
+      width: 320px !important; }
+      body .outer-container .left-container, body .outer-container .right-container {
+        display: none !important; }
+      body .outer-container .content-container {
+        width: 320px !important;
+        margin-left: 15px !important;
+        margin-right: 20px !important;
+        /* section exhibition */
+        /* section sneak peek */
+        /* section interview */
+        /* section sponsorship */ }
+        body .outer-container .content-container .about-image {
+          margin: 0 0 25px; }
+        body .outer-container .content-container .mobile-exhibision-moriyama {
+          float: right;
+          margin: 0 0 0 20px;
+          max-width: 95px; }
+        body .outer-container .content-container .mobile-sneak-peek-images img {
+          margin-bottom: 15px; }
+        body .outer-container .content-container .pull-quote {
+          max-width: 290px;
+          padding: 10px 20px; }
+        body .outer-container .content-container .mobile-sponsors-sub {
+          padding-left: 0; }
+          body .outer-container .content-container .mobile-sponsors-sub .mobile-sponsors-heading {
+            margin-top: 35px; }
+          body .outer-container .content-container .mobile-sponsors-sub .mobile-sponsors-panel img {
+            margin-bottom: 25px; } }
 /* TYPOGRAPHY */
 .intro-texts {
   font-family: 'Droid Serif', serif;
