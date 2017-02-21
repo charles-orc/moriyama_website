@@ -352,6 +352,8 @@ body {
     body {
         /* section landing */
         .section-landing {
+            height: 570px;
+            margin-top: -20px;
             .outer-container {
                 background-image: none;
 
@@ -371,6 +373,38 @@ body {
                         width: 25px;
                         padding: 2px;
                         cursor: pointer;
+                    }
+                }
+
+                .menu-panel  {
+                    width: 320px;
+                    height: 575px;
+
+                    .menu-close-icon {
+                        .menu-close {
+                            margin: 15px 20px 0 0;
+                        }
+                    }
+
+                    .menu-list {
+                        margin-top: 20px;
+
+                        .moriyama-logo {
+                            margin-bottom: 50px;
+                        }
+
+                        a {
+                            height: 40px;
+
+                            h1 {
+                                width: 300px;
+                                font-size: 28px;
+                            }
+                        }
+
+                        .mobile-double-line-link {
+                            margin-bottom: 60px;
+                        }
                     }
                 }
             }

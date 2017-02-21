@@ -257,21 +257,40 @@ body {
     /* section landing */
     /* section plan visit */
     /* Other sections */ }
-    body .section-landing .outer-container {
-      background-image: none; }
-      body .section-landing .outer-container .mobile-no-side-margin {
-        margin-left: 0;
-        margin-right: 0;
-        margin-top: 15px; }
-      body .section-landing .outer-container .mobile-landing-right-panel {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        text-align: right; }
-        body .section-landing .outer-container .mobile-landing-right-panel .menu-hamburger {
-          width: 25px;
-          padding: 2px;
-          cursor: pointer; }
+    body .section-landing {
+      height: 570px;
+      margin-top: -20px; }
+      body .section-landing .outer-container {
+        background-image: none; }
+        body .section-landing .outer-container .mobile-no-side-margin {
+          margin-left: 0;
+          margin-right: 0;
+          margin-top: 15px; }
+        body .section-landing .outer-container .mobile-landing-right-panel {
+          display: flex;
+          flex-direction: column;
+          align-items: flex-end;
+          text-align: right; }
+          body .section-landing .outer-container .mobile-landing-right-panel .menu-hamburger {
+            width: 25px;
+            padding: 2px;
+            cursor: pointer; }
+        body .section-landing .outer-container .menu-panel {
+          width: 320px;
+          height: 575px; }
+          body .section-landing .outer-container .menu-panel .menu-close-icon .menu-close {
+            margin: 15px 20px 0 0; }
+          body .section-landing .outer-container .menu-panel .menu-list {
+            margin-top: 20px; }
+            body .section-landing .outer-container .menu-panel .menu-list .moriyama-logo {
+              margin-bottom: 50px; }
+            body .section-landing .outer-container .menu-panel .menu-list a {
+              height: 40px; }
+              body .section-landing .outer-container .menu-panel .menu-list a h1 {
+                width: 300px;
+                font-size: 28px; }
+            body .section-landing .outer-container .menu-panel .menu-list .mobile-double-line-link {
+              margin-bottom: 60px; }
     body .section-plan-visit .outer-container {
       background-image: none; }
       body .section-plan-visit .outer-container .mobile-address-panel .img-mobile-plan-bg {
