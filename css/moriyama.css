@@ -3,176 +3,219 @@
 figure {
   margin: 0; }
 
-body {
+html, body {
   background-color: #222;
   padding: 0;
   margin: 0 auto;
+  width: 100%;
+  /* fixed top menu */
   /* section landing */
   /* section exhibition */
   /* section sneak peek */
   /* section interview */
   /* section plan visit */
   /* section sponsorship */ }
-  body .section-landing {
-    height: 870px; }
-    body .section-landing .outer-container {
+  html .section-landing, body .section-landing {
+    height: 870px;
+    background-color: #131313; }
+    html .section-landing .outer-container, body .section-landing .outer-container {
       width: 1280px;
       height: inherit;
       margin: 0 auto;
-      display: flex; }
-      body .section-landing .outer-container .left-container, body .section-landing .outer-container .right-container {
-        width: 160px; }
-      body .section-landing .outer-container .content-container {
+      display: flex;
+      background-color: #131313; }
+      html .section-landing .outer-container .left-container, body .section-landing .outer-container .left-container {
+        width: 160px;
+        margin-left: auto; }
+      html .section-landing .outer-container .right-container, body .section-landing .outer-container .right-container {
+        width: 160px;
+        margin-right: auto; }
+      html .section-landing .outer-container .content-container, body .section-landing .outer-container .content-container {
         width: 960px;
         margin: 0 10px 0; }
-    body .section-landing .outer-container {
-      background-color: #131313;
+    html .section-landing .menu-panel, body .section-landing .menu-panel {
+      position: fixed;
+      background: rgba(0, 0, 0, 0.8);
+      width: 100%;
+      height: 100%;
+      z-index: 5000;
+      display: none; }
+      html .section-landing .menu-panel .menu-list, body .section-landing .menu-panel .menu-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: inherit; }
+        html .section-landing .menu-panel .menu-list .menu-close, body .section-landing .menu-panel .menu-list .menu-close {
+          align-self: flex-end;
+          margin-right: 14%;
+          padding: 2px;
+          cursor: pointer; }
+        html .section-landing .menu-panel .menu-list .moriyama-logo, body .section-landing .menu-panel .menu-list .moriyama-logo {
+          width: 15%;
+          height: 32%;
+          margin-bottom: 3%; }
+        html .section-landing .menu-panel .menu-list a, body .section-landing .menu-panel .menu-list a {
+          text-decoration: none;
+          height: auto; }
+          html .section-landing .menu-panel .menu-list a h1, body .section-landing .menu-panel .menu-list a h1 {
+            border-bottom: 1px solid #fff;
+            padding-bottom: 1%;
+            margin-bottom: auto;
+            font-size: 6vh;
+            width: 650px;
+            text-align: center; }
+    html .section-landing .outer-container, body .section-landing .outer-container {
       background-image: url("../Assets/Images/md-landing-bg.jpg");
       background-repeat: no-repeat;
       background-position: bottom right; }
-      body .section-landing .outer-container .content-container {
+      html .section-landing .outer-container .content-container, body .section-landing .outer-container .content-container {
         display: flex;
         flex-direction: column;
-        justify-content: space-between; }
-        body .section-landing .outer-container .content-container .top-images {
+        justify-content: space-between;
+        /* fixed top menu */ }
+        html .section-landing .outer-container .content-container .top-menu, body .section-landing .outer-container .content-container .top-menu {
+          background-color: #000;
+          position: fixed;
+          height: 45px;
+          width: inherit; }
+          html .section-landing .outer-container .content-container .top-menu .top-menu-content, body .section-landing .outer-container .content-container .top-menu .top-menu-content {
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: inherit; }
+            html .section-landing .outer-container .content-container .top-menu .top-menu-content .menu-title, body .section-landing .outer-container .content-container .top-menu .top-menu-content .menu-title {
+              height: 25px; }
+            html .section-landing .outer-container .content-container .top-menu .top-menu-content .menu-hamburger, body .section-landing .outer-container .content-container .top-menu .top-menu-content .menu-hamburger {
+              width: 30px;
+              height: 25px;
+              padding: 2px;
+              cursor: pointer;
+              vertical-align: top; }
+        html .section-landing .outer-container .content-container .top-images, body .section-landing .outer-container .content-container .top-images {
           margin-top: 40px;
           display: flex;
           justify-content: space-between; }
-          body .section-landing .outer-container .content-container .top-images .main-title {
+          html .section-landing .outer-container .content-container .top-images .main-title, body .section-landing .outer-container .content-container .top-images .main-title {
             width: 574px;
             height: 134px; }
-          body .section-landing .outer-container .content-container .top-images .hamburger-image {
+          html .section-landing .outer-container .content-container .top-images .hamburger-image, body .section-landing .outer-container .content-container .top-images .hamburger-image {
             margin-top: 20px; }
-            body .section-landing .outer-container .content-container .top-images .hamburger-image .menu-hamburger {
-              width: 25px;
+            html .section-landing .outer-container .content-container .top-images .hamburger-image .menu-hamburger, body .section-landing .outer-container .content-container .top-images .hamburger-image .menu-hamburger {
+              width: 30px;
               padding: 2px;
               cursor: pointer; }
-        body .section-landing .outer-container .content-container .bottom-panel {
+        html .section-landing .outer-container .content-container .bottom-panel, body .section-landing .outer-container .content-container .bottom-panel {
           display: flex;
           align-items: flex-end;
           justify-content: space-between;
           margin-bottom: 60px; }
-          body .section-landing .outer-container .content-container .bottom-panel .artist {
+          html .section-landing .outer-container .content-container .bottom-panel .artist, body .section-landing .outer-container .content-container .bottom-panel .artist {
             margin-left: 0; }
-            body .section-landing .outer-container .content-container .bottom-panel .artist h1 {
+            html .section-landing .outer-container .content-container .bottom-panel .artist h1, body .section-landing .outer-container .content-container .bottom-panel .artist h1 {
               line-height: 40px; }
-            body .section-landing .outer-container .content-container .bottom-panel .artist p {
+            html .section-landing .outer-container .content-container .bottom-panel .artist p, body .section-landing .outer-container .content-container .bottom-panel .artist p {
               letter-spacing: 2px; }
-          body .section-landing .outer-container .content-container .bottom-panel .white-gallery-image {
+          html .section-landing .outer-container .content-container .bottom-panel .white-gallery-image, body .section-landing .outer-container .content-container .bottom-panel .white-gallery-image {
             margin-bottom: 15px; }
-      body .section-landing .outer-container .menu-panel {
-        position: absolute;
-        top: 0;
-        background: rgba(0, 0, 0, 0.8);
-        max-width: 1280px;
-        width: 1280px;
-        height: 870px;
-        z-index: 5000;
-        display: none; }
-        body .section-landing .outer-container .menu-panel .menu-close-icon {
-          display: flex;
-          justify-content: flex-end; }
-          body .section-landing .outer-container .menu-panel .menu-close-icon .menu-close {
-            margin: 62px 146px 0 0;
-            padding: 2px;
-            cursor: pointer; }
-        body .section-landing .outer-container .menu-panel .menu-list {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          margin-top: 100px; }
-          body .section-landing .outer-container .menu-panel .menu-list .moriyama-logo {
-            width: 150px;
-            margin-bottom: 3%; }
-          body .section-landing .outer-container .menu-panel .menu-list a {
-            text-decoration: none;
-            height: 60px;
-            margin-bottom: 20px; }
-            body .section-landing .outer-container .menu-panel .menu-list a h1 {
-              border-bottom: 1px solid #fff;
-              padding-bottom: 12px;
-              width: 650px;
-              text-align: center; }
-  body .section-exhibition .outer-container {
-    width: 1280px;
-    height: inherit;
-    margin: 0 auto;
-    display: flex; }
-    body .section-exhibition .outer-container .left-container, body .section-exhibition .outer-container .right-container {
-      width: 160px; }
-    body .section-exhibition .outer-container .content-container {
-      width: 960px;
-      margin: 75px 10px 70px; }
-  body .section-exhibition .outer-container {
+  html .section-exhibition, body .section-exhibition {
     background-color: #000; }
-    body .section-exhibition .outer-container .left-container {
+    html .section-exhibition .outer-container, body .section-exhibition .outer-container {
+      width: 1280px;
+      height: inherit;
+      margin: 0 auto;
+      display: flex;
+      background-color: #000; }
+      html .section-exhibition .outer-container .left-container, body .section-exhibition .outer-container .left-container {
+        width: 160px;
+        margin-left: auto; }
+      html .section-exhibition .outer-container .right-container, body .section-exhibition .outer-container .right-container {
+        width: 160px;
+        margin-right: auto; }
+      html .section-exhibition .outer-container .content-container, body .section-exhibition .outer-container .content-container {
+        width: 960px;
+        margin: 75px 10px 70px; }
+    html .section-exhibition .outer-container .left-container, body .section-exhibition .outer-container .left-container {
       display: flex;
       align-items: flex-end; }
-      body .section-exhibition .outer-container .left-container .img-about-misawa {
+      html .section-exhibition .outer-container .left-container .img-about-misawa, body .section-exhibition .outer-container .left-container .img-about-misawa {
         max-width: 500px;
         max-height: 500px; }
-    body .section-exhibition .outer-container .content-container .text-panel {
+    html .section-exhibition .outer-container .content-container .text-panel, body .section-exhibition .outer-container .content-container .text-panel {
       margin-left: 5px; }
-    body .section-exhibition .outer-container .right-container {
+    html .section-exhibition .outer-container .right-container, body .section-exhibition .outer-container .right-container {
       display: flex;
       align-items: flex-end;
       justify-content: flex-end; }
-  body .section-sneak-peek .outer-container {
-    width: 1280px;
-    height: inherit;
-    margin: 0 auto;
-    display: flex; }
-    body .section-sneak-peek .outer-container .left-container, body .section-sneak-peek .outer-container .right-container {
-      width: 160px; }
-    body .section-sneak-peek .outer-container .content-container {
-      width: 960px;
-      margin: 75px 10px 70px; }
-  body .section-sneak-peek .outer-container {
+  html .section-sneak-peek, body .section-sneak-peek {
     background-color: #dcddde; }
-    body .section-sneak-peek .outer-container .content-container h1, body .section-sneak-peek .outer-container .content-container p, body .section-sneak-peek .outer-container .content-container li {
+    html .section-sneak-peek .outer-container, body .section-sneak-peek .outer-container {
+      width: 1280px;
+      height: inherit;
+      margin: 0 auto;
+      display: flex;
+      background-color: #dcddde; }
+      html .section-sneak-peek .outer-container .left-container, body .section-sneak-peek .outer-container .left-container {
+        width: 160px;
+        margin-left: auto; }
+      html .section-sneak-peek .outer-container .right-container, body .section-sneak-peek .outer-container .right-container {
+        width: 160px;
+        margin-right: auto; }
+      html .section-sneak-peek .outer-container .content-container, body .section-sneak-peek .outer-container .content-container {
+        width: 960px;
+        margin: 75px 10px 70px; }
+    html .section-sneak-peek .outer-container .content-container h1, html .section-sneak-peek .outer-container .content-container p, html .section-sneak-peek .outer-container .content-container li, body .section-sneak-peek .outer-container .content-container h1, body .section-sneak-peek .outer-container .content-container p, body .section-sneak-peek .outer-container .content-container li {
       color: #131313; }
-    body .section-sneak-peek .outer-container .content-container .inner-left-panel {
+    html .section-sneak-peek .outer-container .content-container .inner-left-panel, body .section-sneak-peek .outer-container .content-container .inner-left-panel {
       display: flex;
       flex-direction: column;
       justify-content: space-between;
       height: 987px; }
-      body .section-sneak-peek .outer-container .content-container .inner-left-panel .sneak-peek-intro {
+      html .section-sneak-peek .outer-container .content-container .inner-left-panel .sneak-peek-intro, body .section-sneak-peek .outer-container .content-container .inner-left-panel .sneak-peek-intro {
         width: 220px; }
-      body .section-sneak-peek .outer-container .content-container .inner-left-panel .shinjuku-image {
+      html .section-sneak-peek .outer-container .content-container .inner-left-panel .shinjuku-image, body .section-sneak-peek .outer-container .content-container .inner-left-panel .shinjuku-image {
         flex: 0 0 61%; }
-    body .section-sneak-peek .outer-container .content-container .inner-right-panel {
+    html .section-sneak-peek .outer-container .content-container .inner-right-panel, body .section-sneak-peek .outer-container .content-container .inner-right-panel {
       margin-left: 5px; }
-      body .section-sneak-peek .outer-container .content-container .inner-right-panel .sneak-peek-right-images {
+      html .section-sneak-peek .outer-container .content-container .inner-right-panel .sneak-peek-right-images, body .section-sneak-peek .outer-container .content-container .inner-right-panel .sneak-peek-right-images {
         margin-top: 5px; }
-        body .section-sneak-peek .outer-container .content-container .inner-right-panel .sneak-peek-right-images .img-panel-bottom-right {
+        html .section-sneak-peek .outer-container .content-container .inner-right-panel .sneak-peek-right-images .img-panel-bottom-right, body .section-sneak-peek .outer-container .content-container .inner-right-panel .sneak-peek-right-images .img-panel-bottom-right {
           display: flex;
           margin-top: 20px; }
-          body .section-sneak-peek .outer-container .content-container .inner-right-panel .sneak-peek-right-images .img-panel-bottom-right .img-untitled {
+          html .section-sneak-peek .outer-container .content-container .inner-right-panel .sneak-peek-right-images .img-panel-bottom-right .img-untitled, body .section-sneak-peek .outer-container .content-container .inner-right-panel .sneak-peek-right-images .img-panel-bottom-right .img-untitled {
             max-width: 400px;
             max-height: 300px;
             margin-left: 20px; }
-  body .section-interview .outer-container {
-    width: 1280px;
-    height: inherit;
-    margin: 0 auto;
-    display: flex; }
-    body .section-interview .outer-container .left-container, body .section-interview .outer-container .right-container {
-      width: 160px; }
-    body .section-interview .outer-container .content-container {
-      width: 960px;
-      margin: 75px 10px 70px; }
-  body .section-interview .outer-container {
+  html .section-interview, body .section-interview {
     background-color: #000; }
-    body .section-interview .outer-container .interview-top-panel {
+    html .section-interview .outer-container, body .section-interview .outer-container {
+      width: 1280px;
+      height: inherit;
+      margin: 0 auto;
+      display: flex;
+      background-color: #000; }
+      html .section-interview .outer-container .left-container, body .section-interview .outer-container .left-container {
+        width: 160px;
+        margin-left: auto; }
+      html .section-interview .outer-container .right-container, body .section-interview .outer-container .right-container {
+        width: 160px;
+        margin-right: auto; }
+      html .section-interview .outer-container .content-container, body .section-interview .outer-container .content-container {
+        width: 960px;
+        margin: 75px 10px 70px; }
+    html .section-interview .outer-container .interview-top-panel, body .section-interview .outer-container .interview-top-panel {
       margin-bottom: 30px; }
-    body .section-interview .outer-container .pull-quote {
+      html .section-interview .outer-container .interview-top-panel .youtube-video, body .section-interview .outer-container .interview-top-panel .youtube-video {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%); }
+    html .section-interview .outer-container .pull-quote, body .section-interview .outer-container .pull-quote {
       width: 300px;
       margin: 5px 0 50px;
       padding: 20px 15px;
       outline: #666 3px solid;
       text-align: center; }
-      body .section-interview .outer-container .pull-quote .quote {
+      html .section-interview .outer-container .pull-quote .quote, body .section-interview .outer-container .pull-quote .quote {
         font-family: 'Droid Serif', serif;
         font-size: 18px;
         font-weight: 400;
@@ -181,7 +224,7 @@ body {
         margin: 0 0 10px 0;
         padding: 0;
         color: #fff; }
-      body .section-interview .outer-container .pull-quote .quote-name {
+      html .section-interview .outer-container .pull-quote .quote-name, body .section-interview .outer-container .pull-quote .quote-name {
         font-family: 'Nunito', sans-serif;
         font-size: 16px;
         font-weight: 400;
@@ -189,64 +232,75 @@ body {
         color: #fff;
         margin: 0;
         padding: 0; }
-    body .section-interview .outer-container .img-moriyama {
+    html .section-interview .outer-container .img-moriyama, body .section-interview .outer-container .img-moriyama {
       width: 470px;
       max-width: 470px;
       margin-left: -168px; }
-  body .section-plan-visit .outer-container {
-    width: 1280px;
-    height: inherit;
-    margin: 0 auto;
-    display: flex; }
-    body .section-plan-visit .outer-container .left-container, body .section-plan-visit .outer-container .right-container {
-      width: 160px; }
-    body .section-plan-visit .outer-container .content-container {
-      width: 960px;
-      margin: 75px 10px 70px; }
-  body .section-plan-visit .outer-container {
-    background-color: #131313;
-    background-image: url("../Assets/Images/md-plan-trip-gallery.jpg");
-    background-repeat: no-repeat;
-    background-position: top right; }
-    body .section-plan-visit .outer-container .left-container {
+  html .section-plan-visit, body .section-plan-visit {
+    background-color: #131313; }
+    html .section-plan-visit .outer-container, body .section-plan-visit .outer-container {
+      width: 1280px;
+      height: inherit;
+      margin: 0 auto;
       display: flex;
-      align-items: flex-end; }
-      body .section-plan-visit .outer-container .left-container .img-visit-map {
-        max-width: 570px; }
-    body .section-plan-visit .outer-container .content-container .address-panel {
-      width: 220px; }
-      body .section-plan-visit .outer-container .content-container .address-panel .openhour-table tbody {
-        border: none;
-        font-family: 'Droid Serif', serif;
-        font-size: 15px;
-        font-weight: 400;
-        line-height: 180%;
-        color: #fff; }
-        body .section-plan-visit .outer-container .content-container .address-panel .openhour-table tbody .openhour-row:nth-child(even), body .section-plan-visit .outer-container .content-container .address-panel .openhour-table tbody .openhour-row:nth-child(odd) {
+      background-color: #131313; }
+      html .section-plan-visit .outer-container .left-container, body .section-plan-visit .outer-container .left-container {
+        width: 160px;
+        margin-left: auto; }
+      html .section-plan-visit .outer-container .right-container, body .section-plan-visit .outer-container .right-container {
+        width: 160px;
+        margin-right: auto; }
+      html .section-plan-visit .outer-container .content-container, body .section-plan-visit .outer-container .content-container {
+        width: 960px;
+        margin: 75px 10px 70px; }
+    html .section-plan-visit .outer-container, body .section-plan-visit .outer-container {
+      background-image: url("../Assets/Images/md-plan-trip-gallery.jpg");
+      background-repeat: no-repeat;
+      background-position: top right; }
+      html .section-plan-visit .outer-container .left-container, body .section-plan-visit .outer-container .left-container {
+        display: flex;
+        align-items: flex-end; }
+        html .section-plan-visit .outer-container .left-container .img-visit-map, body .section-plan-visit .outer-container .left-container .img-visit-map {
+          max-width: 570px; }
+      html .section-plan-visit .outer-container .content-container .address-panel, body .section-plan-visit .outer-container .content-container .address-panel {
+        width: 220px; }
+        html .section-plan-visit .outer-container .content-container .address-panel .openhour-table tbody, body .section-plan-visit .outer-container .content-container .address-panel .openhour-table tbody {
           border: none;
-          background-color: #131313;
+          font-family: 'Droid Serif', serif;
+          font-size: 15px;
+          font-weight: 400;
+          line-height: 180%;
           color: #fff; }
-        body .section-plan-visit .outer-container .content-container .address-panel .openhour-table tbody .openhour-row td {
-          padding-top: 0;
-          padding-left: 0;
-          padding-bottom: 0; }
-    body .section-plan-visit .outer-container .content-container .text-panel {
-      background-color: #131313;
-      margin-top: -35px;
-      padding-top: 35px; }
-  body .section-sponsorship .outer-container {
-    width: 1280px;
-    height: inherit;
-    margin: 0 auto;
-    display: flex; }
-    body .section-sponsorship .outer-container .left-container, body .section-sponsorship .outer-container .right-container {
-      width: 160px; }
-    body .section-sponsorship .outer-container .content-container {
-      width: 960px;
-      margin: 75px 10px 70px; }
-  body .section-sponsorship .outer-container {
+          html .section-plan-visit .outer-container .content-container .address-panel .openhour-table tbody .openhour-row:nth-child(even), html .section-plan-visit .outer-container .content-container .address-panel .openhour-table tbody .openhour-row:nth-child(odd), body .section-plan-visit .outer-container .content-container .address-panel .openhour-table tbody .openhour-row:nth-child(even), body .section-plan-visit .outer-container .content-container .address-panel .openhour-table tbody .openhour-row:nth-child(odd) {
+            border: none;
+            background-color: #131313;
+            color: #fff; }
+          html .section-plan-visit .outer-container .content-container .address-panel .openhour-table tbody .openhour-row td, body .section-plan-visit .outer-container .content-container .address-panel .openhour-table tbody .openhour-row td {
+            padding-top: 0;
+            padding-left: 0;
+            padding-bottom: 0; }
+      html .section-plan-visit .outer-container .content-container .text-panel, body .section-plan-visit .outer-container .content-container .text-panel {
+        background-color: #131313;
+        margin-top: -35px;
+        padding-top: 35px; }
+  html .section-sponsorship, body .section-sponsorship {
     background-color: #000; }
-    body .section-sponsorship .outer-container .sponsors-panel {
+    html .section-sponsorship .outer-container, body .section-sponsorship .outer-container {
+      width: 1280px;
+      height: inherit;
+      margin: 0 auto;
+      display: flex;
+      background-color: #000; }
+      html .section-sponsorship .outer-container .left-container, body .section-sponsorship .outer-container .left-container {
+        width: 160px;
+        margin-left: auto; }
+      html .section-sponsorship .outer-container .right-container, body .section-sponsorship .outer-container .right-container {
+        width: 160px;
+        margin-right: auto; }
+      html .section-sponsorship .outer-container .content-container, body .section-sponsorship .outer-container .content-container {
+        width: 960px;
+        margin: 75px 10px 70px; }
+    html .section-sponsorship .outer-container .sponsors-panel, body .section-sponsorship .outer-container .sponsors-panel {
       display: flex;
       justify-content: space-between;
       align-items: center; }

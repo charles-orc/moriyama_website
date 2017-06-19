@@ -11,15 +11,22 @@ figure {
     margin: 0;
 }
 
-@mixin container-setting($top_margin, $bottom_margin) {
+@mixin container-setting($top_margin, $bottom_margin, $bg_color) {
     .outer-container {
         width: $outer-container-width;
         height: inherit;
         margin: 0 auto;
         display: flex;
+        background-color: $bg_color;
 
-        .left-container, .right-container {
+        .left-container{
             width: $side-container-width;
+            margin-left: auto;
+        }
+
+        .right-container {
+            width: $side-container-width;
+            margin-right: auto;
         }
 
         .content-container {
@@ -29,18 +36,96 @@ figure {
     }
 }
 
-body {
+html, body {
     background-color: #222;
     padding: 0;
     margin: 0 auto;
+    width: 100%;
+
+    /* fixed top menu */
+    // .top-menu {
+    //     background-color: #000;
+    //     position: relative;
+    //     height: 45px;
+    //     display: flex;
+    //
+    //     .left-container, .right-container {
+    //         width: $side-container-width;
+    //     }
+    //
+    //     .top-menu-content {
+    //         position: fixed;
+    //         margin: 0 auto;
+    //         display: flex;
+    //         justify-content: space-between;
+    //         align-items: center;
+    //
+    //         .menu-title {
+    //             height: 25px;
+    //         }
+    //
+    //         .menu-hamburger {
+    //             width: 30px;
+    //             height: 25px;
+    //             padding: 2px;
+    //             cursor: pointer;
+    //             vertical-align: top;
+    //         }
+    //     }
+    // }
 
     /* section landing */
     .section-landing {
         height: 870px;
-        @include container-setting(0, 0);
+        @include container-setting(0, 0, $background-darkgray);
+        background-color: $background-darkgray;
+
+        .menu-panel {
+            position: fixed;
+            background: rgba(0, 0, 0, 0.8);
+            width: 100%;
+            height: 100%;
+            z-index: 5000;
+            display: none;
+
+            .menu-list {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                height: inherit;
+
+                .menu-close {
+                    align-self: flex-end;
+                    margin-right: 14%;
+                    padding: 2px;
+                    cursor: pointer;
+                }
+
+                .moriyama-logo {
+                    width: 15%;
+                    height: 32%;
+                    margin-bottom: 3%;
+                }
+
+                a {
+                    text-decoration: none;
+                    height: auto;
+                    // margin-bottom: 20px;
+
+                    h1 {
+                        border-bottom: 1px solid #fff;
+                        padding-bottom: 1%;
+                        margin-bottom: auto;
+                        font-size: 6vh;
+                        width: 650px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
 
         .outer-container {
-            background-color: $background-darkgray;
             background-image: url("../Assets/Images/md-landing-bg.jpg");
             background-repeat: no-repeat;
             background-position: bottom right;
@@ -49,6 +134,34 @@ body {
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
+
+                /* fixed top menu */
+                .top-menu {
+                    background-color: #000;
+                    position: fixed;
+                    height: 45px;
+                    width: inherit;
+
+                    .top-menu-content {
+                        margin: 0 auto;
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        width: inherit;
+
+                        .menu-title {
+                            height: 25px;
+                        }
+
+                        .menu-hamburger {
+                            width: 30px;
+                            height: 25px;
+                            padding: 2px;
+                            cursor: pointer;
+                            vertical-align: top;
+                        }
+                    }
+                }
 
                 .top-images {
                     margin-top: 40px;
@@ -64,7 +177,7 @@ body {
                         margin-top: 20px;
 
                         .menu-hamburger {
-                            width: 25px;
+                            width: 30px;
                             padding: 2px;
                             cursor: pointer;
                         }
@@ -95,62 +208,17 @@ body {
                 }
             }
 
-            .menu-panel {
-                position: absolute;
-                top: 0;
-                background: rgba(0, 0, 0, 0.8);
-                max-width: 1280px;
-                width: 1280px;
-                height: 870px;
-                z-index: 5000;
-                display: none;
 
-                .menu-close-icon {
-                    display: flex;
-                    justify-content: flex-end;
-
-                    .menu-close {
-                        margin: 62px 146px 0 0;
-                        padding: 2px;
-                        cursor: pointer;
-                    }
-                }
-
-                .menu-list {
-                    display: flex;
-                    flex-direction: column;
-                    justify-content: center;
-                    align-items: center;
-                    margin-top: 100px;
-
-                    .moriyama-logo {
-                        width: 150px;
-                        margin-bottom: 3%;
-                    }
-
-                    a {
-                        text-decoration: none;
-                        height: 60px;
-                        margin-bottom: 20px;
-
-                        h1 {
-                            border-bottom: 1px solid #fff;
-                            padding-bottom: 12px;
-                            width: 650px;
-                            text-align: center;
-                        }
-                    }
-                }
-            }
         }
     }
 
     /* section exhibition */
     .section-exhibition {
-        @include container-setting(75px, 70px);
+        @include container-setting(75px, 70px, $background-black);
+        background-color: $background-black;
 
         .outer-container {
-            background-color: $background-black;
+
             .left-container {
                 display: flex;
                 align-items: flex-end;
@@ -178,10 +246,10 @@ body {
 
     /* section sneak peek */
     .section-sneak-peek {
-        @include container-setting(75px, 70px);
+        @include container-setting(75px, 70px, $background-lightgray);
+        background-color: $background-lightgray;
 
         .outer-container {
-            background-color: $background-lightgray;
 
             .content-container {
 
@@ -228,13 +296,18 @@ body {
 
     /* section interview */
     .section-interview {
-        @include container-setting(75px, 70px);
+        @include container-setting(75px, 70px, $background-black);
+        background-color: $background-black;
 
         .outer-container {
-            background-color: $background-black;
 
             .interview-top-panel {
                 margin-bottom: 30px;
+
+                .youtube-video {
+                    -webkit-filter: grayscale(100%);
+                    filter: grayscale(100%);
+                }
             }
 
             .pull-quote {
@@ -276,10 +349,10 @@ body {
 
     /* section plan visit */
     .section-plan-visit {
-        @include container-setting(75px, 70px);
+        @include container-setting(75px, 70px, $background-darkgray);
+        background-color: $background-darkgray;
 
         .outer-container {
-            background-color: $background-darkgray;
             background-image: url("../Assets/Images/md-plan-trip-gallery.jpg");
             background-repeat: no-repeat;
             background-position: top right;
@@ -333,10 +406,10 @@ body {
 
     /* section sponsorship */
     .section-sponsorship {
-        @include container-setting(75px, 70px);
+        @include container-setting(75px, 70px, $background-black);
+        background-color: $background-black;
 
         .outer-container {
-            background-color: $background-black;
 
             .sponsors-panel {
                 display: flex;

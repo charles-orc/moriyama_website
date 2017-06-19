@@ -3,14 +3,15 @@ $('.menu-hamburger').click(function(){
   $('.menu-hamburger').hide();
 });
 
-$('.menu-close, .menu-list > a').click(function(){
+$('.menu-close, .menu-list').click(function(){
   $('.menu-panel').hide();
   $('.menu-hamburger').show();
 });
 
-var waypoints = $('#waypoint_menu_close').waypoint({
-  handler: function(direction) {
-    $('.menu-panel').hide();
-    $('.menu-hamburger').show();
-  }
-})
+$('.top-menu').hide();
+
+// var waypoints = $('#waypoint_menu_close').waypoint({
+//   handler: function(direction) {
+//     $('.menu-hamburger').show();
+//   }
+// })

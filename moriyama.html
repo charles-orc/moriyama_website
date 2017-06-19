@@ -2,8 +2,8 @@
 <title>Moriyama Daido - Stylesheet</title>
 <html class="no-js" lang="en">
     <head>
-        <meta charset="utf-8"> 
-          <meta name="description" content=""> 
+        <meta charset="UTF-8">
+        <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link href='https://fonts.googleapis.com/css?family=Nunito:400,300,700' rel='stylesheet' type='text/css'>
         <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
@@ -14,16 +14,33 @@
 
     <body>
         <section class="section-landing">
+            <!-- For show/hide menu -->
+            <div class="menu-panel">
+                <div class="menu-list">
+                    <img class="menu-close" src="Assets/Images/md-nav-icon-close.svg" alt="Close" />
+                    <img class="moriyama-logo" src="Assets/Images/md-nav-moriyama-daido.svg" alt="Moriyama" />
+                    <a href="#exhibition"><h1>About the Exhibition</h1></a>
+                    <a href="#peek"><h1>Sneak Peek</h1></a>
+                    <a class="mobile-double-line-link" href="#interview"><h1>Interview with Moriyama Daido</h1></a>
+                    <a href="#visit"><h1>Plan Your Visit</h1></a>
+                </div>
+            </div>
             <div class="outer-container">
                 <div class="left-container">
                     <!-- For alignment -->
                 </div>
                 <div class="content-container hide-for-small-only">
+                    <div class="top-menu hide-for-small-only">
+                        <div class="top-menu-content">
+                            <img class="menu-title" src="Assets/Images/md-landing-logo-moriyama-daido.svg" alt="Moriyama" />
+                            <img class="menu-hamburger" src="Assets/Images/md-nav-icon-hamburger.svg" alt="Menu" />
+                        </div>
+                    </div>
                     <div class="top-panel">
                         <figure class="top-images">
                             <img class="main-title" src="Assets/Images/md-landing-logo-moriyama-daido.svg" alt="Moriyama" />
                             <figure class="hamburger-image">
-                                <img class="menu-hamburger" src="Assets/Images/md-nav-icon-hamburger.svg" alt="Menu" />
+                                <img class="menu-hamburger" id="waypoint_menu_close" src="Assets/Images/md-nav-icon-hamburger.svg" alt="Menu" />
                             </figure>
                         </figure>
                     </div>
@@ -39,18 +56,23 @@
                         </figure>
                     </div>
                 </div>
+                <div class="right-container">
+                    <!-- For alignment -->
+                </div>
 
                 <!-- For small screen only -->
                 <div class="content-container show-for-small-only">
+                    <div class="mobile-no-side-margin">
+                        <img class="main-title" src="Assets/Images/md-landing-logo-moriyama-daido.svg" alt="Moriyama" />
+                        <img class="menu-hamburger" src="Assets/Images/md-nav-icon-hamburger.svg" alt="Menu" />
+                    </div>
                     <div class="row mobile-no-side-margin">
                         <div class="small-4 columns no-left-padding">
-                            <img class="main-title" src="Assets/Images/md-landing-logo-moriyama-daido.svg" alt="Moriyama" />
-                            <img class="main-title-vertical" src="Assets/Images/md-landing-logo-moriyama-daido.svg" alt="Moriyama" />
+                            <img class="main-title-vertical" src="Assets/Images/md-mobile-moriyama-daido.svg" alt="Moriyama" />
                         </div>
 
                         <div class="small-8 columns no-side-padding">
                             <div class="mobile-landing-right-panel">
-                                <img class="menu-hamburger" src="Assets/Images/md-nav-icon-hamburger.svg" alt="Menu" />
                                 <div class="artist">
                                     <h1>Moriyama <br /> Daido</h1>
                                     <p>May 23 - Sept 14, 2015</p>
@@ -61,23 +83,10 @@
                         </div>
                     </div>
                 </div>
-                <!-- For show/hide menu -->
-                <div class="menu-panel">
-                    <div class="menu-close-icon">
-                        <img class="menu-close" src="Assets/Images/md-nav-icon-close.svg" alt="Close" />
-                    </div>
-                    <div class="menu-list">
-                        <img class="moriyama-logo" src="Assets/Images/md-nav-moriyama-daido.svg" alt="Moriyama" />
-                        <a href="#exhibition"><h1>About the Exhibition</h1></a>
-                        <a href="#peek"><h1>Sneak Peek</h1></a>
-                        <a class="mobile-double-line-link" href="#interview"><h1>Interview with Moriyama Daido</h1></a>
-                        <a href="#visit"><h1>Plan Your Visit</h1></a>
-                    </div>
-                </div>
             </div>
         </section>
 
-        <section class="section-exhibition" id="waypoint_menu_close"> <a name="exhibition"></a>
+        <section class="section-exhibition"> <a name="exhibition"></a>
             <div class="outer-container">
                 <div class="left-container">
                     <img class="img-about-misawa" src="Assets/Images/md-about-misawa.jpg" alt="street">
@@ -187,6 +196,9 @@
                         </div>
                     </div>
                 </div>
+                <div class="right-container">
+                    <!-- For alignment -->
+                </div>
             </div>
         </section>
 
@@ -200,8 +212,8 @@
                     <div class="interview-top-panel">
                   	    <h1>Interview with Moriyama Daido</h1>
                   	    <h2>The Father of Street Photography in Japan</h2>
-                  	    <iframe class="hide-for-small-only" width="940" height="540" src="https://www.youtube.com/embed/q-XxKJ0nGZ0" frameborder="0" allowfullscreen></iframe>
-                        <iframe class="show-for-small-only" width="290" height="160" src="https://www.youtube.com/embed/q-XxKJ0nGZ0" frameborder="0" allowfullscreen></iframe>
+                  	    <iframe class="youtube-video hide-for-small-only" width="940" height="540" src="https://www.youtube.com/embed/q-XxKJ0nGZ0" frameborder="0" allowfullscreen></iframe>
+                        <iframe class="youtube-video show-for-small-only" width="290" height="160" src="https://www.youtube.com/embed/q-XxKJ0nGZ0" frameborder="0" allowfullscreen></iframe>
                     </div>
 
                     <div class="row">
@@ -255,6 +267,9 @@
                             </div>
                         </div>
                     </div>
+                </div>
+                <div class="right-container">
+                    <!-- For alignment -->
                 </div>
             </div>
         </section>
@@ -354,7 +369,9 @@
                         </div>
                     </div>
                 </div>
-
+                <div class="right-container">
+                    <!-- For alignment -->
+                </div>
             </div>
         </section>
 
@@ -395,6 +412,9 @@
                              </div>
                         </div>
                     </div>
+                </div>
+                <div class="right-container">
+                    <!-- For alignment -->
                 </div>
             </div>
         </section>
