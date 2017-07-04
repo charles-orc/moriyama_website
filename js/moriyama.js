@@ -25,6 +25,8 @@ $('a[href*="#"]')
       location.hostname == this.hostname
     ) {
       // Figure out element to scroll to
+      // $(this.hash) will return href attribute of this and gets part of url from #
+      // ie) <a href="some#thing"> $(this.hash) will return #thing
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       // Does a scroll target exist?
