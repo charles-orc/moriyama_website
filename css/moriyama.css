@@ -148,6 +148,8 @@ html, body {
       display: flex;
       align-items: flex-end;
       justify-content: flex-end; }
+  html .img-credits-margin, body .img-credits-margin {
+    margin: 8px 0 20px 0; }
   html .section-sneak-peek, body .section-sneak-peek {
     background-color: #dcddde; }
     html .section-sneak-peek .outer-container, body .section-sneak-peek .outer-container {
@@ -211,7 +213,7 @@ html, body {
         filter: grayscale(100%); }
     html .section-interview .outer-container .pull-quote, body .section-interview .outer-container .pull-quote {
       width: 300px;
-      margin: 5px 0 50px;
+      margin: 11px 0 50px;
       padding: 20px 15px;
       outline: #666 3px solid;
       text-align: center; }
@@ -419,7 +421,7 @@ h3 {
   font-family: 'Nunito', sans-serif;
   font-size: 20px;
   color: #fff;
-  margin: 0 0 15px 0;
+  margin: 0 0 12px 0;
   padding: 0; }
 
 p {
@@ -442,7 +444,7 @@ ul.credits, .fig-credits {
   line-height: 180%;
   list-style-type: none;
   color: #fff;
-  margin: 10px 0 0;
+  margin: 0;
   padding: 0; }
 
 a {
