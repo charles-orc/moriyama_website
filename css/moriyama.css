@@ -140,8 +140,8 @@ html, body {
       display: flex;
       align-items: flex-end; }
       html .section-exhibition .outer-container .left-container .img-about-misawa, body .section-exhibition .outer-container .left-container .img-about-misawa {
-        max-width: 500px;
-        max-height: 500px; }
+        max-width: 469px;
+        max-height: 343px; }
     html .section-exhibition .outer-container .content-container .text-panel, body .section-exhibition .outer-container .content-container .text-panel {
       margin-left: 5px; }
     html .section-exhibition .outer-container .right-container, body .section-exhibition .outer-container .right-container {
