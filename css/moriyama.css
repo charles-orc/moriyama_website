@@ -303,7 +303,7 @@ html, body {
     html .section-sponsorship .outer-container .sponsors-panel, body .section-sponsorship .outer-container .sponsors-panel {
       display: flex;
       justify-content: space-between;
-      align-items: center; }
+      align-items: flex-start; }
 
 /* mobile at 640px */
 @media only screen and (max-width: 640px) {
@@ -402,7 +402,7 @@ html, body {
 h1 {
   font-family: 'Nunito', sans-serif;
   font-size: 42px;
-  font-weight: 300;
+  font-weight: 400;
   color: #fff;
   margin: 0 0 18px 0;
   padding: 0; }
