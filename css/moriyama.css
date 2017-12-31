@@ -35,7 +35,7 @@ html, body {
         margin: 0 10px 0; }
     html .section-landing .menu-panel, body .section-landing .menu-panel {
       position: fixed;
-      background: rgba(0, 0, 0, 0.8);
+      background: rgba(0, 0, 0, 0.9);
       width: 100%;
       height: 100%;
       z-index: 5000;
@@ -54,19 +54,21 @@ html, body {
         html .section-landing .menu-panel .menu-list .moriyama-logo, body .section-landing .menu-panel .menu-list .moriyama-logo {
           width: 15%;
           height: 32%;
+          margin-top: -3%;
           margin-bottom: 3%; }
         html .section-landing .menu-panel .menu-list a, body .section-landing .menu-panel .menu-list a {
           text-decoration: none;
           height: auto; }
           html .section-landing .menu-panel .menu-list a h1, body .section-landing .menu-panel .menu-list a h1 {
-            border-bottom: 1px solid #fff;
-            padding-bottom: 1%;
+            border-bottom: 1px solid #858585;
+            padding-top: 1.5%;
+            padding-bottom: 1.5%;
             margin-bottom: auto;
-            font-size: 6vh;
-            width: 650px;
+            font-size: 36px;
+            width: 620px;
             text-align: center; }
     html .section-landing .outer-container, body .section-landing .outer-container {
-      background-image: url("../Assets/Images/md-landing-bg.jpg");
+      background-image: url("../assets/md-landing-bg.jpg");
       background-repeat: no-repeat;
       background-position: bottom right; }
       html .section-landing .outer-container .content-container, body .section-landing .outer-container .content-container {
@@ -112,11 +114,7 @@ html, body {
           justify-content: space-between;
           margin-bottom: 60px; }
           html .section-landing .outer-container .content-container .bottom-panel .artist, body .section-landing .outer-container .content-container .bottom-panel .artist {
-            margin-left: 0; }
-            html .section-landing .outer-container .content-container .bottom-panel .artist h1, body .section-landing .outer-container .content-container .bottom-panel .artist h1 {
-              line-height: 40px; }
-            html .section-landing .outer-container .content-container .bottom-panel .artist p, body .section-landing .outer-container .content-container .bottom-panel .artist p {
-              letter-spacing: 2px; }
+            margin-bottom: 15px; }
           html .section-landing .outer-container .content-container .bottom-panel .white-gallery-image, body .section-landing .outer-container .content-container .bottom-panel .white-gallery-image {
             margin-bottom: 15px; }
   html .section-exhibition, body .section-exhibition {
@@ -135,7 +133,7 @@ html, body {
         margin-right: auto; }
       html .section-exhibition .outer-container .content-container, body .section-exhibition .outer-container .content-container {
         width: 960px;
-        margin: 75px 10px 70px; }
+        margin: 80px 10px 80px; }
     html .section-exhibition .outer-container .left-container, body .section-exhibition .outer-container .left-container {
       display: flex;
       align-items: flex-end; }
@@ -166,7 +164,7 @@ html, body {
         margin-right: auto; }
       html .section-sneak-peek .outer-container .content-container, body .section-sneak-peek .outer-container .content-container {
         width: 960px;
-        margin: 75px 10px 70px; }
+        margin: 80px 10px 80px; }
     html .section-sneak-peek .outer-container .content-container h1, html .section-sneak-peek .outer-container .content-container p, html .section-sneak-peek .outer-container .content-container li, body .section-sneak-peek .outer-container .content-container h1, body .section-sneak-peek .outer-container .content-container p, body .section-sneak-peek .outer-container .content-container li {
       color: #131313; }
     html .section-sneak-peek .outer-container .content-container .inner-left-panel, body .section-sneak-peek .outer-container .content-container .inner-left-panel {
@@ -175,9 +173,11 @@ html, body {
       justify-content: space-between;
       height: 987px; }
       html .section-sneak-peek .outer-container .content-container .inner-left-panel .sneak-peek-intro, body .section-sneak-peek .outer-container .content-container .inner-left-panel .sneak-peek-intro {
-        width: 220px; }
+        width: 260px; }
+      html .section-sneak-peek .outer-container .content-container .inner-left-panel .sneak-peek-p, body .section-sneak-peek .outer-container .content-container .inner-left-panel .sneak-peek-p {
+        margin: 0; }
       html .section-sneak-peek .outer-container .content-container .inner-left-panel .shinjuku-image, body .section-sneak-peek .outer-container .content-container .inner-left-panel .shinjuku-image {
-        flex: 0 0 61%; }
+        flex: 0 0 57.4%; }
     html .section-sneak-peek .outer-container .content-container .inner-right-panel, body .section-sneak-peek .outer-container .content-container .inner-right-panel {
       margin-left: 5px; }
       html .section-sneak-peek .outer-container .content-container .inner-right-panel .sneak-peek-right-images, body .section-sneak-peek .outer-container .content-container .inner-right-panel .sneak-peek-right-images {
@@ -205,7 +205,7 @@ html, body {
         margin-right: auto; }
       html .section-interview .outer-container .content-container, body .section-interview .outer-container .content-container {
         width: 960px;
-        margin: 75px 10px 70px; }
+        margin: 80px 10px 80px; }
     html .section-interview .outer-container .interview-top-panel, body .section-interview .outer-container .interview-top-panel {
       margin-bottom: 30px; }
       html .section-interview .outer-container .interview-top-panel .youtube-video, body .section-interview .outer-container .interview-top-panel .youtube-video {
@@ -254,9 +254,9 @@ html, body {
         margin-right: auto; }
       html .section-plan-visit .outer-container .content-container, body .section-plan-visit .outer-container .content-container {
         width: 960px;
-        margin: 75px 10px 70px; }
+        margin: 80px 10px 80px; }
     html .section-plan-visit .outer-container, body .section-plan-visit .outer-container {
-      background-image: url("../Assets/Images/md-plan-trip-gallery.jpg");
+      background-image: url("../assets/md-plan-trip-gallery.jpg");
       background-repeat: no-repeat;
       background-position: top right; }
       html .section-plan-visit .outer-container .left-container, body .section-plan-visit .outer-container .left-container {
@@ -301,7 +301,7 @@ html, body {
         margin-right: auto; }
       html .section-sponsorship .outer-container .content-container, body .section-sponsorship .outer-container .content-container {
         width: 960px;
-        margin: 75px 10px 70px; }
+        margin: 80px 10px 80px; }
     html .section-sponsorship .outer-container .sponsors-panel, body .section-sponsorship .outer-container .sponsors-panel {
       display: flex;
       justify-content: space-between;
@@ -412,9 +412,9 @@ h1 {
 h2 {
   font-family: 'Nunito', sans-serif;
   font-size: 20px;
-  font-weight: 300;
+  font-weight: 400;
   color: #fff;
-  margin: -15px 0 18px 0;
+  margin: -15px 0 30px 0;
   padding: 0; }
 
 h3 {
